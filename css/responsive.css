@@ -1,0 +1,213 @@
+
+/*iPad 3 portrait*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+and (orientation : portrait)  {
+  #header{
+    height:auto /*100vh*/;
+  }
+
+  .bg-over {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      max-height: 100%;
+      top:0;
+      right: 0;
+      display: block;
+      z-index: 100;
+      background-color: #000;
+      opacity: 0.5;
+  }
+  /*colonne overlay*/
+  #col-1, #col-2, #col-3, #col-4 {
+    overflow: hidden; height: 58vh;
+  }
+  #col-1, #col-2{
+    height: 45vh;
+  }
+  .menu-slide {
+    position: relative;padding: 15vh 0 0px 50px;height: 100% !important;width: 100%;
+    }
+
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+/*link overlay*/
+    .overlay a {font-size: 50px}
+/*chiusura overlay*/
+    .overlay .closebtn svg {
+      font-size: 50px;top: 15px;right: 35px;
+
+    }
+}
+/*questa media query comprende tutti i dispositivi
+con larghezza minore di 768 quindi tutti gli smartphone*/
+@media (max-width: 768px) {
+  #header{
+    height:auto/*100vh*/;
+  }
+
+/*pagina menu*/
+.list-bar{
+  display: none;
+}
+  .menu-card{
+    flex-basis:auto;/*nella versione mobile sarà -auto-*/
+    padding: 10px;
+    display: flex;
+    flex-direction:column;;/*nella versione mobile sarà -column-*/
+    flex-wrap: wrap;
+  }
+  /*---------------*/
+  .didascalia {
+    width: 60%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-left: -30%;
+    margin-top: -8%;
+    text-align: center;
+}
+
+.slider-icon {
+  font-size: 22px;
+  padding: 0 20px;
+  width: 60%;
+  position: absolute;
+  top: 106%;
+  margin-left: -15%;
+  margin-top: -8%;
+  text-align: center;
+}
+
+
+  .overlay-content .overlay-inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+
+  }
+  .overlay-content .overlay-inner .colonne{
+    width: 100%;
+    height: 100vh!important;
+    background-position: 20% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+
+  }
+  .nav-col{
+    top:180px;
+  }
+  .trasp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:#000;
+    opacity:0.3;
+    z-index: 0;
+  }
+  .cover{
+    position: relative;
+    height: 400px;
+  }
+  .bg-over {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      max-height: 100%;
+      top:0;
+      right: 0;
+      display: block;
+      z-index: 100;
+      background-color: #000;
+      opacity: 0.5;
+  }
+
+  /*logo*/
+  .navbar-brand{
+    top: 40px;left: 15px;z-index: 99;position: relative;
+  }
+  /*chiusera overlay*/
+  .overlay .closebtn svg {
+    position: absolute;top: 30px;right: 45px;font-size: 30px;z-index: 102;
+  }
+/*icona apertura overlay nav*/
+  .navbar-nav span svg {
+    position: absolute;top: 64px;right: 45px;font-size: 20px;color: #fff;
+}
+/*menu primary nell'overlay*/
+  .top-menu{
+    position: absolute;top:120px;left: 0;z-index: 99;
+  }
+  .top-menu li{
+    display: inline-block;padding: 10px;
+  }
+  .top-menu li a{
+    font-size: 18px;
+  }
+/*introduxione centrale header*/
+  .intro {
+    text-align: center;position: absolute;width: 50%;top: 50%;left: 50%;
+    margin-top: -65px;margin-left: -25%;
+  }
+
+
+/*colonne del menu overlay*/
+.nav-col{
+  margin: 55px 0;
+  padding: 0;
+  list-style: none;
+}
+#col-1, #col-2, #col-3, #col-4 {
+    overflow: hidden;
+    height: auto;
+}
+  .row .col-md-3:first-child .menu-slide {
+    position: relative;padding: 150px 0 0px 50px;height: 100% !important;width: 100%;
+  }
+  .row .col-md-3 .menu-slide{
+    position: relative;padding: 30px 0 0px 50px;height: 100%!important;width: 100%;
+  }
+  .row .col-md-3 .menu-slide::after{
+    content:"";width: 100%;height: 2px;width: 80%;margin: 30px 0;display: block;
+    background: #489489;
+  }
+  .row #col-4  {
+    position: relative;height: 100vh !important;width: 100%;
+  }
+  .down-arrow svg{
+    position: relative;font-size: 45px;color: #fff;z-index: 90;bottom: 90px;
+    left: 45%;
+  }
+
+  .social-nav{
+    margin-top: 20px;
+    width: 100%;
+    z-index: 150;
+    position: absolute;
+    bottom: 40px;
+
+  }
+/*slider birre*/
+  .slick-slide img {
+      display: block;
+      margin: 0 auto;
+  }
+  .slick-prev {
+    left: -8px;
+    top:30%;
+}
+  .slick-next {
+      right: 0;
+      top:30%;
+  }
+
+
+}
